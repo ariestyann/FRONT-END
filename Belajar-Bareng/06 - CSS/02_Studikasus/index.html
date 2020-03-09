@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: gray;
+        }
+        .ovo{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 25px;
+            top: 25px;
+            border-radius: 100px 100px 50px 100px;
+        }
+        .ovo::after{
+            content:'';
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 100%;
+            left: 15px;
+            top: 15px;
+            border: 10px solid purple;
+        }
+        .ovo::before{
+            content:'';
+            background-color: purple;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            border-radius: 100%;
+            left: 35px;
+            top: 35px;
+        }
+        .contact{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 25px;
+            top: 35px;
+            border-radius: 100px 100px 50px 100px;
+        }
+        .contact::after{
+            content:'';
+            background-color: purple;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            border-radius: 100%;
+            left: 40px;
+            top: 20px;
+        }
+        .contact::before{
+            content:'';
+            background-color: purple;
+            width: 56px;
+            height: 30px;
+            position: absolute;
+            border-radius: 30px 30px 0px 0px;
+            left: 25px;
+            top: 50px;
+        }
+        .yt{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 25px;
+            top: 45px;
+            border-radius: 100px 100px 50px 100px;
+        }
+        .yt::before{
+            content: '';
+            background-color: red;
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            left: 15px;
+            top: 25px;
+            border-radius: 15px;
+        }
+        .yt::after{
+            content:'';
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 42px;
+            top:38px;
+            border-style: solid;
+            border-width: 10px 0 10px 15px;
+            border-color: transparent transparent transparent #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ovo"></div>
+        <div class="contact"></div>
+        <div class="yt"></div>
+    </div>
+
+</body>
+</html>
