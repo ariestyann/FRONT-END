@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background: rgba(210, 75, 239, 1);
+        height: 100vh;
+      }
+      .navigation li {
+        float: left;
+        list-style-type: none;
+        margin: 0 10px;
+        line-height: 30px;
+      }
+      .navigation a {
+        color: white;
+        text-decoration: none;
+      }
+      .navigation {
+        height: 5vh;
+        width: 100vw;
+        background: purple;
+      }
+      .main-content {
+        clear: both;
+        width: 60vw;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        padding-top: 32vh;
+      }
+      table {
+        text-align: left;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="../01_studikasus/index.html">Daftar</a></li>
+          <li><a href="../02_studikasus/index.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <h1>Daftar Baru</h1>
+        <form action="">
+          <table>
+            <tr>
+              <td><label for="depan">Nama Depan</label></td>
+              <td>:</td>
+              <td>
+                <input type="text" id="depan" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="belakang">Nama Belakang</label></td>
+              <td>:</td>
+              <td>
+                <input type="text" id="belakang" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="mail">E-Mail</label></td>
+              <td>:</td>
+              <td>
+                <input type="email" id="mail" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password</label></td>
+              <td>:</td>
+              <td>
+                <input type="password" id="password" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="confirm-password">Confirm Password</label></td>
+              <td>:</td>
+              <td>
+                <input type="password" id="confirm-password" />
+              </td>
+            </tr>
+          </table>
+
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
