@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#card {
+				width: 250px;
+				border-radius: 10px;
+				text-align: center;
+				position: relative;
+				box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+			}
+			h3 {
+				line-height: 100px;
+			}
+			a {
+				line-height: 30px;
+				width: 90px;
+				height: 30px;
+				background-color: black;
+				color: white;
+				text-decoration: none;
+				display: inline-block;
+				position: relative;
+				border-radius: 10px;
+			}
+			a:hover {
+				background-color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="card" style="height: 150px;top: -20px;">
+				<h3>Tampilkan daftar buah</h3>
+				<a href="#" onclick="showBuah();">Tampilkan</a>
+      </div>
+      
+		</div>
+
+		<script>
+			var listbuah = "";
+			var buah = ["Mangga", "Apel", "Jeruk", "Durian", "Leci"];
+			buah.forEach(daftarbuah);
+			function daftarbuah(value, index, array) {
+				listbuah = listbuah + "<li>" + value + "</li>";
+      }
+      
+			function showBuah(){
+			document.getElementById("container").innerHTML = "<div id='card' style='height: 350px;'><h3>Daftar Buah</h3><ul></ul><a href='#' onclick='unshowBuah();'>Balik Awal</a>
+			</div>"}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #kotak{
+      background-color: palevioletred;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+  </div>
+  <script>
+    var sisi = prompt("Masukan Nilai Sisi : ");
+    var total = sisi*sisi;
+    document.getElementById("container").innerHTML = '<div id="kotak" style="width:'+sisi+'px; height: '+sisi+'px;"></div><h2>L = '+total+' m<sup>2</sup></h2>';
+    </script>
+</body>
+</html>

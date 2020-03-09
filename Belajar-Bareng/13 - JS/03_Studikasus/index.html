@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Studikasus 3</title>
+	</head>
+	<body>
+    <div id="table">
+
+    </div>
+		<script>
+			var th = ["nama", "jurusan", "alamat"];
+			var data = [
+				{
+					nama: "Tian",
+					jurusan: "Informatika",
+					alamat: "Depok"
+				},
+				{
+					nama: "Satrio",
+					jurusan: "Informatika",
+					alamat: "Depok"
+				},
+				{
+					nama: "Raihan",
+					jurusan: "Informatika",
+					alamat: "Depok"
+				},
+				{
+					nama: "Fachrul",
+					jurusan: "Informatika",
+					alamat: "Jakarta"
+				},
+				{
+					nama: "Daffa",
+					jurusan: "Informatika",
+					alamat: "Bintaro"
+				}
+				];
+      var listTh = '';
+      for(var i = 0; i < th.length; i++){
+        listTh += "<th>"+th[i]+"</th>"; // jangan lupa lagi su
+      }
+
+      var baris = data.length;
+      var kolom = 3;
+      var listAnggota = '';
+			for (var i = 0; i < baris; i++){
+        listAnggota += "<tr>"
+        listAnggota += "<td>"+data[i].nama+"</td>";
+				listAnggota += "<td>"+data[i].jurusan+"</td>";
+				listAnggota += "<td>"+data[i].alamat+"</td>";
+        listAnggota += "</tr>";
+			}
+      document.getElementById("table").innerHTML = "<table border='1'>"+listTh+listAnggota+"</table>";
+  </script>
+	</body>
+</html>

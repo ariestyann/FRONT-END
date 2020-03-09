@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var text ='';
+    var b = 1;
+    // for(var i = 1; i <=10; i++){
+    //   for(var j = 0; j<i; j++){
+    //     text += "* " ;
+    //   }
+    //   text += "<br>";
+    // }
+    // document.write(text);
+    
+    // for(var i = 0; i <=10; i++){
+    //   for(var j = 10; j>i; j--){
+    //     text += "* ";
+    //   }
+    //   text += "<br>";
+    // }
+    // document.write(text);
+
+    for(var i = 1; i <= 7; i++){
+      for(var j = 1; j <= 7; j++){
+        text += "- ";
+        if((j+i)==8){
+          break;
+        }
+    }
+    for(var j = 1; j <= 7; j++){
+        text += "0 ";
+    }
+    text += "<br>";
+  }
+    document.write(text);
+
+  </script>
+</body>
+</html>

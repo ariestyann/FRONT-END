@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+</div> 
+  <script>
+  var buah = ["jeruk","apel","anggur","rambutan"];
+  var listbuah=''; // ini tu biar terdeklarasi dari awal, terus juga kudu kasih tanda kutip biar kita nanti mengiisi nya dengan array string
+  var i = 0;
+  for(; i < buah.length;){
+    listbuah += "<li>" + buah[i] + "</li>";
+    i++;
+  }
+  document.getElementById("container").innerHTML = "<ul>"+listbuah+"</ul>";
+</script>
+</body>
+</html>
